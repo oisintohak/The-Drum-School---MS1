@@ -22,7 +22,7 @@ The website should be clearly laid out with user friendly navigation to make the
 #### - Structure (How is the information structured and how is it logically grouped?)
 pages: Home, lessons, gallery, contact
 
-##Wireframes
+## Wireframes
 
 [Desktop_Home_page](/docs/wireframes/HOME PAGE DESKTOP.png)
 [Mobile_Home_Page](/docs/wireframes/HOME PAGE MOBILE.png)
