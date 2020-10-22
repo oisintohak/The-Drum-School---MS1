@@ -1,45 +1,38 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+## Website for a drum teacher
 
-Welcome USER_NAME,
+### User Stories:
+- I need to view the page on a mobile device
+- I'm looking for contact info or social media links
+- I want to book a series/course of lessons as a gift
+- I want to read some reviews from past students
+- I want to watch a video demonstration of an example lesson
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+### Five Planes:
 
-## Gitpod Reminders
+#### - Strategy (What this website aims to achieve, and for whom?)
+The website aims to present essential information that the user stories request in a way that is visually appealing, professional and accessible
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+#### - Scope (Which features, based on information from the strategy plane, do you want to include in your design?)
+The website should be clearly laid out with user friendly navigation to make the site easy to use and accesible. The colors, typography and styling should give the user an impression of professionalism. The user should be able to easily access links to social media, a phone number and a user-friendly contact form. There should be a page or section with pictures of the teaching environment and possibly video content of a performance or demo lesson.
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+#### - Structure (How is the information structured and how is it logically grouped?)
+pages: Home, lessons, gallery, contact
 
-Another blue button should appear to click: *Open Browser*.
+##Wireframes
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+[Desktop Home page](/docs/wireframes/HOME PAGE DESKTOP.png)
+[Mobile Home Page](/docs/wireframes/HOME PAGE MOBILE.png)
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### - Skeleton (How will our information be represented, and how will the user navigate to the information and the features?)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+#### - Surface (What will the finished product look like? - What colors, typography, and design elements will we use?)
