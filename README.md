@@ -24,8 +24,8 @@ pages: Home, lessons, gallery, contact
 
 ##Wireframes
 
-[Desktop Home page](/docs/wireframes/HOME PAGE DESKTOP.png)
-[Mobile Home Page](/docs/wireframes/HOME PAGE MOBILE.png)
+[Desktop_Home_page](/docs/wireframes/HOME PAGE DESKTOP.png)
+[Mobile_Home_Page](/docs/wireframes/HOME PAGE MOBILE.png)
 
 
 
