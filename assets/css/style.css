@@ -1,3 +1,6 @@
+
+
+
 /* ----------------BACKGROUND FOR ALL PAGES---------------- */
 
 body {
@@ -8,11 +11,9 @@ body {
 
 /* ----------------COLORS---------------- */
 
-
-
-
-
-
+body * {
+    color: #fafafa;
+}
 
 /* ----------------NAVBAR---------------- */
 
@@ -26,8 +27,9 @@ body {
 }
 
 #top-nav .navbar-toggler {
-    color: #fafafa;
     border-color: #fafafa;
+    border-width: 1px;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 #top-nav .active .nav-link {
@@ -47,18 +49,16 @@ body {
 
 /* ----------------HEADER---------------- */
 
-.row {
-    justify-content: center;
-}
-
 #main-header {
-    margin-top: 66px;
+    margin-top: 100px;
     text-align: center;
 }
 
 #main-header h1 {
     max-width: 660px;
     margin: 0 auto;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 #main-header a {
@@ -68,4 +68,19 @@ body {
 #main-header a:hover {
     text-decoration: none;
     color: #fafafa;
+}
+
+
+/* ----------------CAROUSEL---------------- */
+
+#quote-carousel {
+    margin-top: 50px;
+}
+
+
+/* increase space between carousel controls and content */
+#quote-carousel .carousel-item>p{
+    text-align: center;
+    padding: 20px 50px 50px 50px;
+    margin: 0 30px;
 }
