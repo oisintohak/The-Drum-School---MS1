@@ -6,30 +6,66 @@ body {
     background-position: top-left;
 }
 
+/* ----------------COLORS---------------- */
+
+
+
+
+
+
+
 /* ----------------NAVBAR---------------- */
 
 #top-nav {
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-    margin-bottom: 40px;
-    height: 120px;
+    background: rgb(0,0,0,0.8);
 }
 
 #top-nav .nav-link {
-    color: #fff;
+    color: #fafafa;
+    padding: 8px;
 }
 
 #top-nav .navbar-toggler {
-    color: #fff;
-    border-color: #fff;
+    color: #fafafa;
+    border-color: #fafafa;
 }
 
-#top-nav .navbar-nav {
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0);
+#top-nav .active .nav-link {
+    background: #fafafa;
+    color: black;
+    border-radius: 4px;
 }
 
-header {
-    margin-top: 120px;
+/* SMALLER BRAND FONT FOR NARROW MOBILE SCREENS */
+@media screen and (max-width:340px)
+{
+#top-nav .navbar-brand {
+    font-size: 1rem;
+}
+
+}
+
+/* ----------------HEADER---------------- */
+
+.row {
+    justify-content: center;
+}
+
+#main-header {
+    margin-top: 66px;
+    text-align: center;
+}
+
+#main-header h1 {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+#main-header a {
+    color: #fafafa;
+}
+
+#main-header a:hover {
+    text-decoration: none;
     color: #fafafa;
 }
