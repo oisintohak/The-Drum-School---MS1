@@ -1,5 +1,5 @@
 ## Website for a drum teacher
-
+---
 ### User Stories:
 - I need to view the page on a mobile device
 - I'm looking for contact info or social media links
@@ -24,8 +24,14 @@ pages: Home, lessons, gallery, contact
 
 ## Wireframes
 
-[Desktop_Home_page](/docs/wireframes/HOME_PAGE_DESKTOP.png)
-[Mobile_Home_Page](/docs/wireframes/HOME_PAGE_MOBILE.png)
+- [Desktop_Home_page](assets/docs/wireframes/HOME_DESKTOP.PNG)
+- [Mobile_Home_Page](assets/docs/wireframes/HOME_MOBILE.PNG)
+- [Desktop_Lessons_Page](assets/docs/wireframes/LESSONS_DESKTOP.PNG)
+- [Mobile_Lessons_Page](assets/docs/wireframes/LESSONS_MOBILE.PNG)
+- [Desktop_Gallery_Page](assets/docs/wireframes/GALLERY_DESKTOP.PNG)
+- [Mobile_Gallery_Page](assets/docs/wireframes/GALLERY_MOBILE.PNG)
+- [Desktop_Contact_Page](assets/docs/wireframes/CONTACT_BOOK_DESKTOP.PNG)
+- [Mobile_Contact_Page](assets/docs/wireframes/CONTACT_BOOK_MOBILE.PNG)
 
 
 

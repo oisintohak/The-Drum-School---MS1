@@ -1,0 +1,35 @@
+/* ----------------BACKGROUND FOR ALL PAGES---------------- */
+
+body {
+    background-image: url('../images/matthijs-smit-bRG2C0FAQEY-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: top-left;
+}
+
+/* ----------------NAVBAR---------------- */
+
+#top-nav {
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    margin-bottom: 40px;
+    height: 120px;
+}
+
+#top-nav .nav-link {
+    color: #fff;
+}
+
+#top-nav .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
+#top-nav .navbar-nav {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header {
+    margin-top: 120px;
+    color: #fafafa;
+}
