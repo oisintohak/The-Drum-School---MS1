@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+* {
+    font-family: 'Righteous';
+}
 
 
 /* ----------------BACKGROUND FOR ALL PAGES---------------- */
-
+/* 
 body {
-    background-image: url('../images/matthijs-smit-bRG2C0FAQEY-unsplash.jpg');
+    background-image: url('../images/drum-bg.jpg');
     background-attachment: fixed;
     background-position: top-left;
-}
+} */
 
 /* ----------------COLORS---------------- */
 
@@ -15,61 +19,87 @@ body * {
     color: #fafafa;
 }
 
-/* ----------------NAVBAR---------------- */
-
 #top-nav {
-    background: rgb(0,0,0,0.8);
+    background:rgba(66, 66, 66, 0.5)
 }
 
 #top-nav .nav-link {
     color: #fafafa;
-    padding: 8px;
-}
-
-#top-nav .navbar-toggler {
-    border-color: #fafafa;
-    border-width: 1px;
-    background-color: rgba(255, 255, 255, .2);
 }
 
 #top-nav .active .nav-link {
     background: #fafafa;
     color: black;
+}
+
+#top-nav .navbar-toggler {
+    border-color: #fafafa;
+}
+
+#main-header h1 {
+    background-color: rgba(66, 66, 66, 0.5)
+
+}
+
+.book-now-btn {
+    background-color: #ef6c00;
+    border-color: #fff;
+}
+
+.book-now-btn:hover {
+    background-color: #b53d00;
+    border-color: #000;
+}
+
+/* ----------------NAVBAR---------------- */
+
+
+#top-nav .nav-link {
+    padding: 8px;
+}
+
+#top-nav .navbar-toggler {
+border-width: 1px;
+}
+
+#top-nav .active .nav-link {
+
     border-radius: 4px;
 }
 
 /* SMALLER BRAND FONT FOR NARROW MOBILE SCREENS */
 @media screen and (max-width:340px)
 {
-#top-nav .navbar-brand {
-    font-size: 1rem;
-}
+    #top-nav .navbar-brand {
+        font-size: 1rem;
+    }
 
 }
 
 /* ----------------HEADER---------------- */
 
 #main-header {
-    margin-top: 100px;
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url('../images/drum-bg.jpg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
     text-align: center;
+}
+
+#main-header .container-fluid {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #main-header h1 {
     max-width: 660px;
     margin: 0 auto;
     border-radius: 6px;
-    background-color: rgba(255, 255, 255, .2);
 }
-
-#main-header a {
-    color: #fafafa;
-}
-
-#main-header a:hover {
-    text-decoration: none;
-    color: #fafafa;
-}
-
 
 /* ----------------CAROUSEL---------------- */
 
