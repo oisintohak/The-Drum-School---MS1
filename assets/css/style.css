@@ -264,3 +264,21 @@ border-width: 1px;
         font-size: .7rem;
     }
 }
+
+
+
+/* ----------------GALLERY PAGE---------------- */
+
+/* masonry gallery layout taken from code-institute love running project */
+
+#gallery {
+    background-color: #000;
+    margin-top: 67px;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0px;
+}
+
+#gallery img {
+    width: 100%;
+}
