@@ -3,51 +3,141 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <title>The Drum School</title>
   </head>
   <body>
-    <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="top-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
 
-      <a class="navbar-brand text-uppercase" href="index.html"> <img src="assets/images/drummer1.png" alt="drummer-logo" width="40" height="40"> The Drum School</a>
+      <a class="logo-link navbar-brand text-uppercase" href="index.html"> <img src="assets/images/drummer1.png" alt="drummer-logo" width="40" height="40"> The Drum School</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle-button" aria-controls="navbar-toggle-button" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar-toggle-button">
         <ul class="navbar-nav ml-auto text-uppercase">
-          <li class="nav-item ml-auto">
+          <li class="nav-item ml-auto active">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item ml-auto active">
+          <li class="nav-item ml-auto">
             <a class="nav-link" href="lessons.html">Lessons</a>
           </li>
           <li class="nav-item ml-auto">
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link btn book-now-btn" href="contact.html">BOOK NOW</a>
           </li>
         </ul>
       </div>
-
     </nav>
 
-    
+    <div id="main-wrapper">
+      <div id="before-footer">
+        <!-- carousel for testimonials -->
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col col-lg-6">
+              <section id="quote-carousel">
 
-    <section>
-      <img src="assets/images/drum-bg.jpg" alt="">
-
-    </section>
-<!-- 
-    <footer>
-      <div class="icon-credit">
-        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-indicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="1"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora illo reprehenderit similique. Assumenda natus minima itaque, dolorum eos voluptate earum velit, doloremque porro laboriosam sapiente. Deserunt nesciunt minus labore?</p>
+                    </div>
+                    <div class="carousel-item">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequuntur quis sequi, ducimus exercitationem repudiandae quos suscipit eaque, aperiam sunt doloremque, illo numquam obcaecati laborum eius. Eaque itaque ea eligendi?</p>
+                    </div>
+                    <div class="carousel-item">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt possimus autem quia dolore, non quasi delectus officiis, ducimus unde quae molestiae soluta assumenda, praesentium porro atque quidem esse saepe accusamus!</p>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+          
+              </section>
+            </div>
+          </div>
+        </div>
+        
       </div>
+      
+      <footer id="main-footer">
+        <div class="container-fluid">
+          <div class="row pt-3">
+    
+            <div class="col-6 col-sm-4">
+              <a class="logo-link text-uppercase" href="index.html"> <img src="assets/images/drummer1.png" alt="drummer-logo" width="40" height="40"> The Drum School</a>
+            </div>
+            
+            <div class="col-6 col-sm-4">            
+              <address>
+                No. 123,<br/>
+                Road St.<br/>
+                Dublin,<br/>
+                Ireland.
+              </address>
+            </div>
+            
+            <div class="col-12 col-sm-4 text-left">
+              <div>
+                <a class="vertical-align-links" href="tel:+353-555-555-1212"><i class="fas fa-phone-square-alt"></i><span class="responsive-text-size">+353-555-555-1212</span></a>
+              </div>
 
-      icon taken from https://www.flaticon.com/free-icon/drummer_151730?term=drums&page=1&position=66
-    </footer> -->
+              <div>
+                <a class="vertical-align-links" href="mailto:info@thedrumschool.com"><i class="fas fa-envelope-square"></i><span class="responsive-text-size">info@thedrumschool.com</span></a>
+              </div>
+              
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="fab fa-youtube-square"></i>
+                </a>
+            </div>
+    
+          </div>
+        </div>
+        
+        <div class="copyright-fine-print text-muted">
+          <small class="text-muted">
+            <a href="https://github.com/oisintohak" target="_blank">
+              <i class="fab fa-github-square"></i>
+              © Oisin Tohak 2020.
+            </a>          </small>
+          <small>
+            Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+          </small>
+        </div>
+    
+        </footer>
+
+    </div>    
+
 
  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -132,6 +132,8 @@ border-width: 1px;
 
 }
 
+
+
 /* ----------------HEADER---------------- */
 
 #main-header {
@@ -257,12 +259,25 @@ border-width: 1px;
     justify-content: space-between;
 }
 
+#main-footer .copyright-fine-print i {
+    font-size: 1rem;
+}
+
 
 /* on narrow screens reduce font size of email address and phone number */
 @media screen and (max-width:750px) {
     #main-footer .responsive-text-size{
         font-size: .7rem;
     }
+}
+
+/* POSITION FOOTER AT BOTTOM OF PAGE */
+
+#main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -282,3 +297,6 @@ border-width: 1px;
 #gallery img {
     width: 100%;
 }
+
+
+/* ----------------LESSONS PAGE---------------- */
