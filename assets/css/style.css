@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-* {
-    font-family: 'Righteous';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+    scroll-behavior: smooth;
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 
 
 /* ----------------BACKGROUND FOR ALL PAGES---------------- */
@@ -15,16 +28,24 @@ body {
 
 /* ----------------COLORS---------------- */
 
-body * {
-    color: #fafafa;
+body {
+    background-color: #fafafa;
 }
 
 #top-nav {
     background:rgba(66, 66, 66, 0.5)
 }
 
+#top-nav {
+    font-family: 'Righteous', sans-serif;
+}
+
 #top-nav .nav-link {
     color: #fafafa;
+}
+
+#top-nav .nav-link:hover, #top-nav .navbar-brand:hover {
+    color: #c1c1c1;
 }
 
 #top-nav .active .nav-link {
@@ -32,27 +53,47 @@ body * {
     color: black;
 }
 
+#top-nav .active .nav-link:hover {
+    background-color: #000;
+    color: #fafafa;
+}
+
 #top-nav .navbar-toggler {
     border-color: #fafafa;
 }
 
 #main-header h1 {
-    background-color: rgba(66, 66, 66, 0.5)
-
+    background-color: rgba(66, 66, 66, 0.5);
+    color: #fafafa;
 }
 
 .book-now-btn {
     background-color: #ef6c00;
-    border-color: #fff;
+    border-color: #000;
+    color: #fafafa;
 }
 
-.book-now-btn:hover {
+.book-now-btn:hover, #top-nav .book-now-btn:hover {
+    border-color: #fff;
+    background-color: #b53d00;
+    color: #fafafa;
+}
+
+.book-now-btn:focus {
     background-color: #b53d00;
     border-color: #000;
+    box-shadow: none;
+}
+
+#intro-section, #lesson-cards-section {
+    background-color: #fafafa;
 }
 
 /* ----------------NAVBAR---------------- */
 
+.logo-link img{
+    border-radius: 5px;
+}
 
 #top-nav .nav-link {
     padding: 8px;
@@ -101,6 +142,26 @@ border-width: 1px;
     border-radius: 6px;
 }
 
+#more-info-button {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+#more-info-button a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+#more-info-button a:hover {
+    text-decoration: none;
+}
+
+#more-info-button i {
+    font-size: 4rem;
+}
+
 /* ----------------CAROUSEL---------------- */
 
 #quote-carousel {
@@ -114,3 +175,39 @@ border-width: 1px;
     padding: 20px 50px 50px 50px;
     margin: 0 30px;
 }
+
+
+/* ----------------INTRO SECTION---------------- */
+
+#intro-section {
+    padding-top: 100px;
+    font-size: 1.5rem;
+}
+
+/* ----------------LESSON CARDS SECTION---------------- */
+
+
+#lesson-cards-section .card {
+    background: none;
+    border: #000 solid 1px;
+    border-radius: 20px;
+}
+
+#lesson-cards-section .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#lesson-cards-section .card-body{
+    border-radius: 0 0 20px 20px;
+    background-color: #D5D5D5;
+}
+
+#lesson-cards-section .card-img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+#lesson-cards-section .card-title {
+    text-decoration: underline;
+}
+
