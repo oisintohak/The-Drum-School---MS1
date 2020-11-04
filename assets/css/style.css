@@ -1,22 +1,29 @@
+/* ----------------GOOGLE FONTS---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* ----------------SMOOTH SCROLL---------------- */
 
 html {
     scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
+    html {
+        scroll-behavior: auto;
 	}
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+/* ----------------SMOOTH LINK HOVER TRANSITION---------------- */
+
+a {
+    transition: color .2s, background-color .4s;
 }
-
-
 
 /* ----------------BACKGROUND FOR ALL PAGES---------------- */
 /* 
@@ -34,10 +41,6 @@ body {
 
 #top-nav {
     background:rgba(66, 66, 66, 0.5)
-}
-
-#top-nav {
-    font-family: 'Righteous', sans-serif;
 }
 
 #top-nav .nav-link {
@@ -89,7 +92,20 @@ body {
     background-color: #fafafa;
 }
 
+#main-footer {
+    background-color: #D5D5D5;
+    border-top: #000 solid 1px;
+}
+
 /* ----------------NAVBAR---------------- */
+
+#top-nav {
+    font-family: 'Righteous', sans-serif;
+}
+
+#top-nav {
+    border-bottom: #000 1px solid;
+}
 
 .logo-link img{
     border-radius: 5px;
@@ -104,7 +120,6 @@ border-width: 1px;
 }
 
 #top-nav .active .nav-link {
-
     border-radius: 4px;
 }
 
@@ -211,3 +226,41 @@ border-width: 1px;
     text-decoration: underline;
 }
 
+/* ----------------FOOTER---------------- */
+
+#main-footer {
+    text-align: center;
+}
+
+#main-footer a {
+    color: #000;
+    text-decoration: none;
+    /* transition: color .4s; */
+}
+
+#main-footer a:hover {
+    color: #fafafa;
+}
+
+#main-footer i {
+    font-size: 2rem;
+    padding: 0 2px;
+}
+
+#main-footer .vertical-align-links {
+    display: flex;
+    align-items: center;
+}
+
+.copyright-fine-print {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* on narrow screens reduce font size of email address and phone number */
+@media screen and (max-width:750px) {
+    #main-footer .responsive-text-size{
+        font-size: .7rem;
+    }
+}
