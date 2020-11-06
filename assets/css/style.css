@@ -97,6 +97,16 @@ body {
     border-top: #000 solid 1px;
 }
 
+.lessons-page-cards-section h1 {
+    background-color: rgba(66, 66, 66, 0.5);
+    color: #fafafa;
+}
+
+#quote-carousel {
+    background-color: rgba(66, 66, 66, 0.5);
+    color: #fafafa;
+}
+
 /* ----------------NAVBAR---------------- */
 
 #top-nav {
@@ -269,10 +279,20 @@ border-width: 1px;
 
 /* ----------------GALLERY PAGE---------------- */
 
+#main-wrapper .gallery-page-main-content {
+    min-height: 100vh;
+    background-color: #000;
+    background-image: url('../images/drum-bg.jpg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+}
+
 /* masonry gallery layout taken from code-institute love running project */
 
 #gallery {
-    background-color: #000;
+    background-color:rgba(66, 66, 66, 0.5);
     margin-top: 67px;
     line-height: 0;
     column-count: 3;
@@ -295,22 +315,25 @@ border-width: 1px;
 }
 
 .lessons-page-cards-section h1 {
-    padding: 100px 0;
     text-align: center;
+    max-width: 660px;
+    margin: 100px 0 30px 0;
+    border-radius: 6px;
 }
 
 /* TESTIMONIAL CAROUSEL */
 
 #quote-carousel {
+    height: 150px;
     margin-top: 50px;
 }
 
 /* increase space between carousel controls and content */
-#quote-carousel .carousel-item>p{
+#quote-carousel .carousel-item > p{
+    /* height: 4rem; */
     text-align: center;
     padding: 20px 50px 50px 50px;
     margin: 0 30px;
 }
-
 
 
