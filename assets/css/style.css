@@ -183,10 +183,15 @@ border-width: 1px;
 
 #more-info-button a:hover {
     text-decoration: none;
+    color:  #ef6c00;
 }
 
 #more-info-button i {
     font-size: 4rem;
+}
+
+.book-now-btn {
+    font-family: 'Righteous', sans-serif;
 }
 
 /* ----------------INTRO SECTION---------------- */
@@ -337,3 +342,50 @@ border-width: 1px;
 }
 
 
+
+/* ----------------CONTACT PAGE---------------- */
+
+#main-wrapper .contact-page-main-content {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: url('../images/drum-bg.jpg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact-page-form-section, .contact-page-contacts-section {
+    background-color:rgba(66, 66, 66, 0.5);
+    color: #fafafa;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.contact-page-form-section .contact-form-heading {
+    font-weight: 600;    
+}
+
+/* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
+.contact-page-form-section hr {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(250,250,250,0), rgba(250,250,250,.4),rgba(250,250,250,.4), rgba(250,250,250,0));
+}
+
+.contact-form .form-control {
+    color: #000;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.contact-form .form-control:focus {
+    border-color: #ef6c00;
+    box-shadow: 0 0 0 0.2rem rgba(239,108,0,.25);
+}
+
+.contact-form .book-now-btn {
+    width: 100%;
+}
