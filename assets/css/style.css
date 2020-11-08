@@ -1,6 +1,5 @@
 /* ----------------GOOGLE FONTS---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
@@ -33,78 +32,72 @@ body {
     background-position: top-left;
 } */
 
-/* ----------------COLORS---------------- */
+/* ----------------COLOR VARIABLES---------------- */
+/* 
+:root {
+    --transparent-grey-bg: rgba(66, 66, 66, 0.5);
+    --light-grey-bg: #D5D5D5;
+    --white-text-color: #fafafa;
+    --white-text-hover: #c1c1c1;
+    --black-text-color: #000;
+    --main-orange-btn-bg: #ef6c00;
+    --main-orange-btn-hover: #b53d00;
+} */
+
+:root {
+    --transparent-grey-bg: rgba(66, 66, 66, 0.5);
+    --light-grey-bg: #D5D5D5;
+    --white-text-color: #fafafa;
+    --white-text-hover: #c1c1c1;
+    --black-text-color: #000;
+    --main-orange-btn-bg: #c43c00;
+    --main-orange-btn-hover: #ff6d00;
+}
 
 body {
-    background-color: #fafafa;
-}
-
-#top-nav {
-    background:rgba(66, 66, 66, 0.5)
-}
-
-#top-nav .nav-link {
-    color: #fafafa;
-}
-
-#top-nav .nav-link:hover, #top-nav .navbar-brand:hover {
-    color: #c1c1c1;
-}
-
-#top-nav .active .nav-link {
-    background: #fafafa;
-    color: black;
-}
-
-#top-nav .active .nav-link:hover {
-    background-color: #000;
-    color: #fafafa;
-}
-
-#top-nav .navbar-toggler {
-    border-color: #fafafa;
+    background-color: var(--white-text-color);
 }
 
 #main-header h1 {
-    background-color: rgba(66, 66, 66, 0.5);
-    color: #fafafa;
+    background-color: var(--transparent-grey-bg);
+    color:var(--white-text-color);
 }
 
 .book-now-btn {
-    background-color: #ef6c00;
-    border-color: #000;
-    color: #fafafa;
+    background-color: var(--main-orange-btn-bg);
+    border-color: var(--black-text-color);
+    color:var(--white-text-color);
 }
 
 .book-now-btn:hover, #top-nav .book-now-btn:hover {
-    border-color: #fff;
-    background-color: #b53d00;
-    color: #fafafa;
+    border-color: var(--white-text-color);
+    background-color: var(--main-orange-btn-hover);
+    color:var(--white-text-color);
 }
 
 .book-now-btn:focus {
-    background-color: #b53d00;
-    border-color: #000;
+    background-color: var(--main-orange-btn-hover);
+    border-color: var(--black-text-color);
     box-shadow: none;
 }
-
+/* 
 #intro-section, #lesson-cards-section {
-    /* background-color: #fafafa; */
-}
+    background-color:var(--white-text-color);
+} */
 
 #main-footer {
-    background-color: #D5D5D5;
-    border-top: #000 solid 1px;
+    background-color: var(--light-grey-bg);
+    border-top: var(--black-text-color) solid 1px;
 }
 
 .lessons-page-cards-section h1 {
-    background-color: rgba(66, 66, 66, 0.5);
-    color: #fafafa;
+    background-color: var(--transparent-grey-bg);
+    color:var(--white-text-color);
 }
 
 #quote-carousel {
-    background-color: rgba(66, 66, 66, 0.5);
-    color: #fafafa;
+    background-color: var(--transparent-grey-bg);
+    color:var(--white-text-color);
 }
 
 /* ----------------NAVBAR---------------- */
@@ -113,15 +106,40 @@ body {
     font-family: 'Righteous', sans-serif;
 }
 
+#top-nav .nav-link:hover, #top-nav .navbar-brand:hover {
+    color: var(--white-text-hover);
+}
+
+#top-nav .active .nav-link {
+    background:var(--white-text-color);
+    color: var(--black-text-color);
+}
+
+#top-nav .active .nav-link:hover {
+    background-color: var(--black-text-color);
+    color:var(--white-text-color);
+}
+
+#top-nav .navbar-toggler {
+    border-color:var(--white-text-color);
+}
+
+
 #top-nav {
-    border-bottom: #000 1px solid;
+    background: var(--transparent-grey-bg);
+    border-bottom: var(--black-text-color) 1px solid;
 }
 
 .logo-link img{
     border-radius: 5px;
 }
 
+#top-nav .nav-item {
+    padding: 0 4px;
+}
+
 #top-nav .nav-link {
+    color: var(--white-text-color);
     padding: 8px;
 }
 
@@ -141,8 +159,6 @@ border-width: 1px;
     }
 
 }
-
-
 
 /* ----------------HEADER---------------- */
 
@@ -178,12 +194,12 @@ border-width: 1px;
 
 #more-info-button a{
     text-decoration: none;
-    color: #fafafa;
+    color:var(--white-text-color);
 }
 
 #more-info-button a:hover {
     text-decoration: none;
-    color:  #ef6c00;
+    color:  var(--main-orange-btn-bg);
 }
 
 #more-info-button i {
@@ -206,7 +222,7 @@ border-width: 1px;
 
 #lesson-cards-section .card {
     background: none;
-    border: #000 solid 1px;
+    border: var(--black-text-color) solid 1px;
     border-radius: 20px;
 }
 
@@ -217,7 +233,7 @@ border-width: 1px;
 
 #lesson-cards-section .card-body{
     border-radius: 0 0 20px 20px;
-    background-color: #D5D5D5;
+    background-color: var(--light-grey-bg);
 }
 
 #lesson-cards-section .card-img-top {
@@ -235,13 +251,13 @@ border-width: 1px;
 }
 
 #main-footer a {
-    color: #000;
+    color: var(--black-text-color);
     text-decoration: none;
     /* transition: color .4s; */
 }
 
 #main-footer a:hover {
-    color: #fafafa;
+    color: var(--white-text-color);
 }
 
 #main-footer i {
@@ -286,7 +302,7 @@ border-width: 1px;
 
 #main-wrapper .gallery-page-main-content {
     min-height: 100vh;
-    background-color: #000;
+    background-color: var(--black-text-color);
     background-image: url('../images/drum-bg.jpg');
     background-attachment: fixed;
     background-position: center top;
@@ -297,7 +313,7 @@ border-width: 1px;
 /* masonry gallery layout taken from code-institute love running project */
 
 #gallery {
-    background-color:rgba(66, 66, 66, 0.5);
+    background-color:var(--transparent-grey-bg);
     margin-top: 67px;
     line-height: 0;
     column-count: 3;
@@ -348,7 +364,7 @@ border-width: 1px;
 #main-wrapper .contact-page-main-content {
     padding: 100px 0;
     min-height: 100vh;
-    background-color: #000;
+    background-color: var(--black-text-color);
     background-image: url('../images/drum-bg.jpg');
     background-attachment: fixed;
     background-position: center top;
@@ -357,35 +373,60 @@ border-width: 1px;
 }
 
 .contact-page-form-section, .contact-page-contacts-section {
-    background-color:rgba(66, 66, 66, 0.5);
-    color: #fafafa;
+    background-color:var(--transparent-grey-bg);
+    color:var(--white-text-color);
     padding: 20px;
     border-radius: 6px;
     text-align: center;
 }
 
-.contact-page-form-section .contact-form-heading {
+.contact-page-form-section .contact-form-heading, .contact-page-contacts-section .contacts-section-heading {
     font-weight: 600;    
 }
 
 /* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
-.contact-page-form-section hr {
+.contact-page-form-section hr, .contact-page-contacts-section hr {
     border: none;
     height: 1px;
     background-image: linear-gradient(to right, rgba(250,250,250,0), rgba(250,250,250,.4),rgba(250,250,250,.4), rgba(250,250,250,0));
 }
 
 .contact-form .form-control {
-    color: #000;
+    color: --black-text-color;
     border-radius: 6px;
     background-color: rgba(255, 255, 255, .6);
 }
 
 .contact-form .form-control:focus {
-    border-color: #ef6c00;
+    border-color: var(--main-orange-btn-bg);
     box-shadow: 0 0 0 0.2rem rgba(239,108,0,.25);
 }
 
 .contact-form .book-now-btn {
     width: 100%;
+}
+
+.contact-page-contacts-section {
+    color:var(--white-text-color);
+    font-size: 1rem;
+}
+
+.contact-page-contacts-section a {
+    color:var(--white-text-color);
+
+}
+
+.contact-page-contacts-section a:hover{
+    color: var(--white-text-hover);
+    text-decoration: none;
+}
+
+.contact-page-contacts-section i {
+    font-size: 2rem;
+    padding: 0 2px;
+}
+
+.contact-page-contacts-section .vertical-align-links {
+    display: flex;
+    align-items: center;
 }
