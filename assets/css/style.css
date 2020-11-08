@@ -300,13 +300,18 @@ border-width: 1px;
 
 /* ----------------GALLERY PAGE---------------- */
 
-#main-wrapper .gallery-page-main-content {
-    min-height: 100vh;
-    background-color: var(--black-text-color);
+/* adding bg image to body to allow grey overlay bg for gallery section */
+
+#gallery-page-body {
     background-image: url('../images/drum-bg.jpg');
     background-attachment: fixed;
     background-position: center top;
     background-size: cover;
+}
+
+#main-wrapper .gallery-page-main-content {
+    min-height: 100vh;
+    background-color: var(--transparent-grey-bg);
     text-align: center;
 }
 
@@ -314,15 +319,23 @@ border-width: 1px;
 
 #gallery {
     background-color:var(--transparent-grey-bg);
+    height: 100%;
     margin-top: 67px;
     line-height: 0;
-    column-count: 3;
+    column-count: 2;
     column-gap: 0px;
 }
 
 #gallery img {
     width: 100%;
 }
+
+@media screen and (min-width:768px) {
+    #gallery {
+        column-count: 3;
+    }
+}
+
 
 
 /* ----------------LESSONS PAGE---------------- */
