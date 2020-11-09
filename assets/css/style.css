@@ -244,6 +244,22 @@ border-width: 1px;
     text-decoration: underline;
 }
 
+/* keep card body fixed height when there are multiple cards in a row */
+@media screen and (min-width:768px){
+    #lesson-cards-section .card-body {
+        min-height: 226px;
+    }
+}
+
+@media screen and (min-width:992px){
+    #lesson-cards-section .card-body {
+        height: 290px;
+    }
+}
+
+
+
+
 /* ----------------FOOTER---------------- */
 
 #main-footer {
@@ -442,4 +458,9 @@ border-width: 1px;
 .contact-page-contacts-section .vertical-align-links {
     display: flex;
     align-items: center;
+}
+
+.contact-page-contacts-section .map-frame {
+    width: 100%;
+    min-height: 250px;
 }
