@@ -6,6 +6,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* secondary font class */
+.alt-font {   
+    font-family: 'Righteous', sans-serif;
+}
 /* ----------------SMOOTH SCROLL---------------- */
 
 html {
@@ -24,29 +28,13 @@ a {
     transition: color .2s, background-color .4s;
 }
 
-/* ----------------BACKGROUND FOR ALL PAGES---------------- */
-/* 
-body {
-    background-image: url('../images/drum-bg.jpg');
-    background-attachment: fixed;
-    background-position: top-left;
-} */
 
-/* ----------------COLOR VARIABLES---------------- */
-/* 
+/* COLOR VARIABLES */
 :root {
-    --transparent-grey-bg: rgba(66, 66, 66, 0.5);
+    --transparent-grey-bg: rgba(66, 66, 66, 0.7);
+    --dark-grey-bg: #707070;
     --light-grey-bg: #D5D5D5;
-    --white-text-color: #fafafa;
-    --white-text-hover: #c1c1c1;
-    --black-text-color: #000;
-    --main-orange-btn-bg: #ef6c00;
-    --main-orange-btn-hover: #b53d00;
-} */
-
-:root {
-    --transparent-grey-bg: rgba(66, 66, 66, 0.5);
-    --light-grey-bg: #D5D5D5;
+    --white-bg-color: #fafafa;
     --white-text-color: #fafafa;
     --white-text-hover: #c1c1c1;
     --black-text-color: #000;
@@ -58,50 +46,7 @@ body {
     background-color: var(--white-text-color);
 }
 
-#main-header h1 {
-    background-color: var(--transparent-grey-bg);
-    color:var(--white-text-color);
-}
-
-.book-now-btn {
-    background-color: var(--main-orange-btn-bg);
-    border-color: var(--black-text-color);
-    color:var(--white-text-color);
-}
-
-.book-now-btn:hover, #top-nav .book-now-btn:hover {
-    border-color: var(--white-text-color);
-    background-color: var(--main-orange-btn-hover);
-    color:var(--white-text-color);
-}
-
-.book-now-btn:focus {
-    background-color: var(--main-orange-btn-hover);
-    border-color: var(--black-text-color);
-    box-shadow: none;
-}
-/* 
-#intro-section, #lesson-cards-section {
-    background-color:var(--white-text-color);
-} */
-
-#main-footer {
-    background-color: var(--light-grey-bg);
-    border-top: var(--black-text-color) solid 1px;
-}
-
-.lessons-page-cards-section h1 {
-    background-color: var(--transparent-grey-bg);
-    color:var(--white-text-color);
-}
-
-#quote-carousel {
-    background-color: var(--transparent-grey-bg);
-    color:var(--white-text-color);
-}
-
 /* ----------------NAVBAR---------------- */
-
 #top-nav {
     font-family: 'Righteous', sans-serif;
 }
@@ -160,6 +105,27 @@ border-width: 1px;
 
 }
 
+/* ----------------BOOK NOW BUTTON---------------- */
+
+.book-now-btn {
+    background-color: var(--main-orange-btn-bg);
+    border-color: var(--black-text-color);
+    color:var(--white-text-color);
+    font-family: 'Righteous', sans-serif;
+}
+
+.book-now-btn:hover, #top-nav .book-now-btn:hover {
+    border-color: var(--white-text-color);
+    background-color: var(--main-orange-btn-hover);
+    color:var(--white-text-color);
+}
+
+.book-now-btn:focus {
+    background-color: var(--main-orange-btn-hover);
+    border-color: var(--black-text-color);
+    box-shadow: none;
+}
+
 /* ----------------HEADER---------------- */
 
 #main-header {
@@ -170,6 +136,10 @@ border-width: 1px;
     background-position: center top;
     background-size: cover;
     text-align: center;
+    /* use flexbox to push more info btn down */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #main-header .container-fluid {
@@ -185,10 +155,13 @@ border-width: 1px;
     border-radius: 6px;
 }
 
+#main-header h1 {
+    background-color: var(--transparent-grey-bg);
+    color:var(--white-text-color);
+}
+
 #more-info-button {
     width: 100%;
-    position: absolute;
-    bottom: 10px;
     text-align: center;
 }
 
@@ -206,19 +179,28 @@ border-width: 1px;
     font-size: 4rem;
 }
 
-.book-now-btn {
-    font-family: 'Righteous', sans-serif;
-}
-
 /* ----------------INTRO SECTION---------------- */
 
-#intro-section {
-    padding-top: 100px;
-    font-size: 1.5rem;
+#intro-section h3 {
+    padding-top: 5rem;
+}
+
+#intro-section p{
+    font-size: 1.4rem;
+}
+
+/* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
+#intro-section hr{
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
 }
 
 /* ----------------LESSON CARDS SECTION---------------- */
 
+#lesson-cards-section h3 {
+    padding-bottom: 2rem;
+}
 
 #lesson-cards-section .card {
     background: none;
@@ -246,23 +228,82 @@ border-width: 1px;
 
 /* keep card body fixed height when there are multiple cards in a row */
 @media screen and (min-width:768px){
-    #lesson-cards-section .card-body {
-        min-height: 226px;
+    #lesson-cards-section .card-body p {
+        min-height: 96px;
     }
 }
 
 @media screen and (min-width:992px){
     #lesson-cards-section .card-body {
-        height: 290px;
+        /* height: 290px; */
     }
 }
 
+/* ----------------TESTIMONIAL CAROUSEL---------------- */
+/* this carousel was taken from https://www.edureka.co/blog/bootstrap-testimonial/ */
 
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
 
+/* ----------------BOTTOM CALL TO ACTION---------------- */
+
+/* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
+#bottom-call-to-action hr{
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
+}
 
 /* ----------------FOOTER---------------- */
 
 #main-footer {
+    background-color: var(--light-grey-bg);
+    border-top: var(--black-text-color) solid 1px;
     text-align: center;
 }
 
@@ -284,6 +325,11 @@ border-width: 1px;
 #main-footer .vertical-align-links {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#main-footer .social-links i {
+    font-size: 3rem;
 }
 
 .copyright-fine-print {
@@ -293,6 +339,15 @@ border-width: 1px;
 
 #main-footer .copyright-fine-print i {
     font-size: 1rem;
+}
+
+/* prevent footer overflow on specified screen widths */
+@media screen and (min-width:991px) and (max-width: 1300px) {
+    #main-footer #email-phone {
+        min-width: 100%;
+        /* important required to override bootstrap class */
+        align-items: center!important;
+    }
 }
 
 
@@ -312,29 +367,41 @@ border-width: 1px;
     justify-content: space-between;
 }
 
+/* ----------------LESSONS PAGE---------------- */
 
+#main-wrapper .lessons-page-main-content {
+    background-color: var(--white-bg-color);
+}
+
+.lessons-page-cards-section h1 {
+    background-color: var(--dark-grey-bg);
+    color:var(--white-text-color);
+    text-align: center;
+    max-width: 660px;
+    margin-top: 100px;
+    border-radius: 6px;
+}
+
+/* TESTIMONIAL CAROUSEL */
+/* 
+#quote-carousel {
+    height: 150px;
+    margin-top: 50px;
+} */
+
+/* increase space between carousel controls and content */
+/* #quote-carousel .carousel-item > p{
+    height: 4rem;
+    text-align: center;
+    padding: 20px 50px 50px 50px;
+    margin: 0 30px;
+} */
 
 /* ----------------GALLERY PAGE---------------- */
-
-/* adding bg image to body to allow grey overlay bg for gallery section */
-
-#gallery-page-body {
-    background-image: url('../images/drum-bg.jpg');
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-}
-
-#main-wrapper .gallery-page-main-content {
-    min-height: 100vh;
-    background-color: var(--transparent-grey-bg);
-    text-align: center;
-}
-
 /* masonry gallery layout taken from code-institute love running project */
 
 #gallery {
-    background-color:var(--transparent-grey-bg);
+    background-color:var(--dark-grey-bg);
     height: 100%;
     margin-top: 67px;
     line-height: 0;
@@ -354,55 +421,17 @@ border-width: 1px;
 
 
 
-/* ----------------LESSONS PAGE---------------- */
-
-#main-wrapper .lessons-page-main-content {
-    background-image: url('../images/drum-bg.jpg');
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-    text-align: center;
-}
-
-.lessons-page-cards-section h1 {
-    text-align: center;
-    max-width: 660px;
-    margin: 100px 0 30px 0;
-    border-radius: 6px;
-}
-
-/* TESTIMONIAL CAROUSEL */
-
-#quote-carousel {
-    height: 150px;
-    margin-top: 50px;
-}
-
-/* increase space between carousel controls and content */
-#quote-carousel .carousel-item > p{
-    /* height: 4rem; */
-    text-align: center;
-    padding: 20px 50px 50px 50px;
-    margin: 0 30px;
-}
-
-
 
 /* ----------------CONTACT PAGE---------------- */
 
 #main-wrapper .contact-page-main-content {
     padding: 100px 0;
     min-height: 100vh;
-    background-color: var(--black-text-color);
-    background-image: url('../images/drum-bg.jpg');
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-    text-align: center;
+    background-color: var(--white-bg-color);
 }
 
 .contact-page-form-section, .contact-page-contacts-section {
-    background-color:var(--transparent-grey-bg);
+    background-color:var(--dark-grey-bg);
     color:var(--white-text-color);
     padding: 20px;
     border-radius: 6px;
@@ -414,7 +443,7 @@ border-width: 1px;
 }
 
 /* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
-.contact-page-form-section hr, .contact-page-contacts-section hr {
+#main-wrapper .contact-page-form-section hr, #main-wrapper .contact-page-contacts-section hr {
     border: none;
     height: 1px;
     background-image: linear-gradient(to right, rgba(250,250,250,0), rgba(250,250,250,.4),rgba(250,250,250,.4), rgba(250,250,250,0));
