@@ -382,6 +382,15 @@ border-width: 1px;
     border-radius: 6px;
 }
 
+.lessons-page-cards-section .card-body{
+    height: 100%;
+    background-color: var(--light-grey-bg);
+}
+
+.lessons-page-cards-section .card-title {
+    text-decoration: underline;
+}
+
 /* TESTIMONIAL CAROUSEL */
 /* 
 #quote-carousel {
