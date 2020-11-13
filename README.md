@@ -62,23 +62,23 @@ I have chosen to use a full-screen background image of a drumkit with sticks for
 I began with some initial UX planning and basic wireframes. I then started coding with a navbar and a background image for the home page. I added a banner link to the center of the home page.
 
  After the initial planning session with my mentor I changed the layout from the wireframes:
-    - Change the banner text on home page to not be a link (you don't want to redirect users who've just arrive on your page)
-    - Add a call to action/book now button below the banner text on the home page
-    - Add some introductory text on the home page below the call to action button
-    - Below it, add lesson cards with a brief description of each lesson type
-    - Add another call to action below these cards
-    - Add contact and social links to the footer
-    - The lessons page should be divided into separate cards for each lesson type, with detailed information for each
-    - Use fancybox.js for the gallery
+- Change the banner text on home page to not be a link (you don't want to redirect users who've just arrive on your page)
+- Add a call to action/book now button below the banner text on the home page
+- Add some introductory text on the home page below the call to action button
+- Below it, add lesson cards with a brief description of each lesson type
+- Add another call to action below these cards
+- Add contact and social links to the footer
+- The lessons page should be divided into separate cards for each lesson type, with detailed information for each
+- Use fancybox.js for the gallery
 
 After my mid-project session with my mentor I had the following changes left to implement:
-    - Space address over 2 lines in footer
-    - Add vertical space around the intro text above the lesson cards on the home page, with a headng above the cards and push the 'find out more' buttons to the bottom of the lesson cards
-    - Add a testimonial slider with a header below the lesson cards on the home page
-    - Add call to action text to book now button above footer
-    - Move the email and phone beside the home address in the footer and increase the size of the social links
-    - Only use the background image for the first view of the home page
-    - On lessons page, use large horizontal cards with image on left
-    - On book now page make address text responsive and move map down in card
+- Space address over 2 lines in footer
+- Add vertical space around the intro text above the lesson cards on the home page, with a headng above the cards and push the 'find out more' buttons to the bottom of the lesson cards
+- Add a testimonial slider with a header below the lesson cards on the home page
+- Add call to action text to book now button above footer
+- Move the email and phone beside the home address in the footer and increase the size of the social links
+- Only use the background image for the first view of the home page
+- On lessons page, use large horizontal cards with image on left
+- On book now page make address text responsive and move map down in card
 
 
