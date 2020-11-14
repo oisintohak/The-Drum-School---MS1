@@ -172,7 +172,6 @@ border-width: 1px;
 
 #more-info-button a:hover {
     text-decoration: none;
-    color:  var(--main-orange-btn-bg);
 }
 
 #more-info-button i {
@@ -204,8 +203,7 @@ border-width: 1px;
 
 #lesson-cards-section .card {
     background: none;
-    border: var(--black-text-color) solid 1px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 #lesson-cards-section .card-img-top {
@@ -214,12 +212,8 @@ border-width: 1px;
 }
 
 #lesson-cards-section .card-body{
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
     background-color: var(--light-grey-bg);
-}
-
-#lesson-cards-section .card-img-top {
-    border-radius: 20px 20px 0 0;
 }
 
 #lesson-cards-section .card-title {
@@ -240,54 +234,18 @@ border-width: 1px;
 }
 
 /* ----------------TESTIMONIAL CAROUSEL---------------- */
-/* this carousel was taken from https://www.edureka.co/blog/bootstrap-testimonial/ */
+#testimonial-carousel .carousel-inner {
+    height: 200px;
+    background-color: var(--dark-grey-bg);
+    padding-top: 1rem;
+    border-radius: 6px;
+    color: var(--white-text-color);
+}
 
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 60px;
-}
-#quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-}
-#quote-carousel .carousel-indicators {
-    position: relative;
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-top: 20px;
-    margin-right: -19px;
-}
-#quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+#testimonial-carousel .carousel-image {
+    display: inline;
+    height: 60px;
     border-radius: 50%;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all .4s ease-in;
-    vertical-align: middle;
-}
-#quote-carousel .carousel-indicators .active {
-    width: 128px;
-    height: 128px;
-    opacity: 1;
-    transition: all .2s;
-}
-.item blockquote {
-    border-left: none;
-    margin: 0;
-}
-.item blockquote p:before {
-    content: "f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
 }
 
 /* ----------------BOTTOM CALL TO ACTION---------------- */
@@ -391,23 +349,7 @@ border-width: 1px;
     text-decoration: underline;
 }
 
-/* TESTIMONIAL CAROUSEL */
-/* 
-#quote-carousel {
-    height: 150px;
-    margin-top: 50px;
-} */
-
-/* increase space between carousel controls and content */
-/* #quote-carousel .carousel-item > p{
-    height: 4rem;
-    text-align: center;
-    padding: 20px 50px 50px 50px;
-    margin: 0 30px;
-} */
-
 /* ----------------GALLERY PAGE---------------- */
-/* masonry gallery layout taken from code-institute love running project */
 
 #gallery {
     background-color:var(--dark-grey-bg);
@@ -433,7 +375,6 @@ border-width: 1px;
 
 #main-wrapper .contact-page-main-content {
     padding-top: 100px;
-    /* min-height: 100vh; */
     background-color: var(--white-bg-color);
 }
 
