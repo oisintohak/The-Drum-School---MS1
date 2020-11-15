@@ -235,9 +235,9 @@ border-width: 1px;
 
 /* ----------------TESTIMONIAL CAROUSEL---------------- */
 #testimonial-carousel .carousel-inner {
-    height: 200px;
+    min-height: 200px;
     background-color: var(--dark-grey-bg);
-    padding-top: 1rem;
+    padding: 1rem 15% 2rem 15%;
     border-radius: 6px;
     color: var(--white-text-color);
 }
