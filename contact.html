@@ -49,15 +49,15 @@
                 <form method="POST" class="text-left contact-form">
                   <div class="form-group">
                     <label for="name">Name:</label>
-                    <input class="form-control form-text-input" type="text" name="name" id="name"><br>
+                    <input class="form-control form-text-input" type="text" name="name" id="name" required>
                   </div>
                   <div class="form-group">
                     <label for="email">Email Address:</label>
-                    <input class="form-control form-text-input" type="email" name="email" id="email" required><br>
+                    <input class="form-control form-text-input" type="email" name="email" id="email" required>
                   </div>
                   <div class="form-group">
                     <label for="tel">Phone:</label>
-                    <input class="form-control form-text-input" name="tel" type="tel" id="tel"><br>
+                    <input class="form-control form-text-input" name="tel" type="tel" id="tel" required>
                   </div>
                   <div class="form-group">
                     <label for="lessons">What lessons are you interested in?</label>
@@ -66,7 +66,11 @@
                       <option value="adult-group">Adult Group</option>
                       <option value="kids">Kids</option>
                       <option value="online">Online</option>
-                    </select><br>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea">Tell us about yourself and any previous drumming experience:</label>
+                    <textarea class="form-control" id="textarea" name="textarea" rows="5"></textarea>
                   </div>
                   <input class="btn btn-lg book-now-btn" type="submit" value="Submit">
                 </form>

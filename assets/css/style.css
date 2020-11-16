@@ -188,7 +188,7 @@ border-width: 1px;
     font-size: 1.4rem;
 }
 
-/* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
+/* HR STYLING TAKEN FROM: https://css-tricks.com/examples/hrs/ */
 #intro-section hr{
     border: none;
     height: 1px;
@@ -250,7 +250,7 @@ border-width: 1px;
 
 /* ----------------BOTTOM CALL TO ACTION---------------- */
 
-/* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
+/* HR STYLING TAKEN FROM: https://css-tricks.com/examples/hrs/ */
 #bottom-call-to-action hr{
     border: none;
     height: 1px;
@@ -387,10 +387,10 @@ border-width: 1px;
 }
 
 .contact-page-form-section .contact-form-heading, .contact-page-contacts-section .contacts-section-heading {
-    font-weight: 600;    
+    font-weight: 600;
 }
 
-/* hr styling idea taken from https://css-tricks.com/examples/hrs/ */
+/* HR STYLING TAKEN FROM: https://css-tricks.com/examples/hrs/ */
 #main-wrapper .contact-page-form-section hr, #main-wrapper .contact-page-contacts-section hr {
     border: none;
     height: 1px;
