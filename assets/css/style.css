@@ -233,6 +233,13 @@ border-width: 1px;
     }
 }
 
+/* HR STYLING TAKEN FROM: https://css-tricks.com/examples/hrs/ */
+hr{
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
+}
+
 /* ----------------TESTIMONIAL CAROUSEL---------------- */
 #testimonial-carousel .carousel-inner {
     min-height: 200px;

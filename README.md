@@ -14,7 +14,7 @@ This website was built to allow potential students to find information about The
 ### Five Planes:
 
 #### - Strategy (What this website aims to achieve, and for whom?)
-The website aims to present essential information that the user stories request in a way that is visually appealing, professional and accessible.
+The website aims to present essential information that the user stories request in a way that is visually appealing, professional and accessible. The main purpose of the website is to gain new students by motivating them to fill out the contact form.
 
 
 
@@ -24,10 +24,10 @@ The website should be clearly laid out with user friendly navigation to make the
 
 
 #### - Structure (How is the information structured and how is it logically grouped?)
-pages: Home, lessons, gallery, contact
+Pages: Home, lessons, gallery, contact
 
 The first view of the home page will be simple in structure with a short text intro and a call to action button.
-Below it will be some further introductory information about the drum school and lesson types. The footer will contain contact details, an address and social media links.
+Below it will be some further introductory information about the drum school, lesson types and some student testimonials. The footer will contain contact details, an address and social media links.
 The lessons page will contain detailed information on each lesson type and prices for lessons. There will be a student testimonial slider to give potential customers added reassurance of the quality of the lessons.
 The gallery page will feature a set of pictures to show users what the lesson environment is like and what to expect.
 The booking/contact page will feature a simple contact form in one section and a map with contact details in another.
@@ -72,7 +72,7 @@ I began with some initial UX planning and basic wireframes. I then started codin
 - Use fancybox.js for the gallery
 
 After my mid-project session with my mentor I had the following changes left to implement:
-- Space address over 2 lines in footer
+- Space the address over 2 lines in footer
 - Add vertical space around the intro text above the lesson cards on the home page, with a headng above the cards and push the 'find out more' buttons to the bottom of the lesson cards
 - Add a testimonial slider with a header below the lesson cards on the home page
 - Add call to action text to book now button above footer
