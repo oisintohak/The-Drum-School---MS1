@@ -50,13 +50,14 @@ I have chosen to use a full-screen background image of a drumkit with sticks for
 
 ---
 ## Technologies used:
-- HTML
-- CSS
+- HTML 5
+- CSS 3
 - [Bootstrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-- [FontAwesome](https://fontawesome.com/) for icons
-- [Google Fonts](https://fonts.google.com/) : I used two fonts for this project, [Righteous](https://fonts.google.com/specimen/Righteous?query=righ) and [Lato](https://fonts.google.com/specimen/Lato?query=lato)
+- [FontAwesome](https://fontawesome.com/) for icons.
+- [Google Fonts](https://fonts.google.com/) : I used two fonts for this project, [Righteous](https://fonts.google.com/specimen/Righteous?query=righ) and [Lato](https://fonts.google.com/specimen/Lato?query=lato).
 - [Fancybox](https://fancyapps.com/fancybox/3/) : this is a JavaScript lightbox library for presenting various types of media. I used it for the gallery page.
 - [Autoprefixer](https://autoprefixer.github.io/) : this was used to automatically add CSS prefixes to support multiple browsers.
+- [GitHub Pages](https://pages.github.com/) was used for deployment.
 
 ---
 ## Features:
@@ -91,9 +92,18 @@ After my mid-project session with my mentor I had the following changes left to 
 
 ---
 ## Testing:
+- [W3C HTML Validation Service](https://validator.w3.org/) was used to validate the HTML
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS
 
 ---
 ## Deployment
+The site was deployed to [GitHub Pages](https://pages.github.com/) using the following steps:
+- Create a repository on GitHub and initialize it with a README.MD file
+- The root of your repository must contain an index.html file which will be the main page of your live GitHub Page.
+- Go to repository settings, scroll to GitHub Pages and select the master branch for your source.
+- Save the selection and when the page reloads the link to your live site will be in the GitHub Pages section. The link can take up to 1 hour to go live.
+
+To clone this repository run `git clone https://github.com/oisintohak/Milestone-Project-1.git` into a terminal with git installed.
 
 ---
 ## Credits
