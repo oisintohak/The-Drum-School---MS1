@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ----------------GOOGLE FONTS---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -25,6 +32,8 @@ html {
 /* ----------------SMOOTH LINK HOVER TRANSITION---------------- */
 
 a {
+    -webkit-transition: color .2s, background-color .4s;
+    -o-transition: color .2s, background-color .4s;
     transition: color .2s, background-color .4s;
 }
 
@@ -122,7 +131,8 @@ border-width: 1px;
 .book-now-btn:focus {
     background-color: var(--main-orange-btn-hover);
     border-color: var(--black-text-color);
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 /* ----------------HEADER---------------- */
@@ -136,16 +146,29 @@ border-width: 1px;
     background-size: cover;
     text-align: center;
     /* use flexbox to push more info btn down */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #main-header .container-fluid {
     height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 #main-header h1 {
@@ -191,6 +214,8 @@ border-width: 1px;
 #intro-section hr{
     border: none;
     height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0)), color-stop(rgba(0,0,0,.8)),color-stop(rgba(0,0,0,.8)), to(rgba(0,0,0,0)));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
 }
 
@@ -206,7 +231,8 @@ border-width: 1px;
 
 #lesson-cards-section .card-img-top {
     height: 200px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 #lesson-cards-section .card-body{
@@ -221,6 +247,8 @@ border-width: 1px;
 hr{
     border: none;
     height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0)), color-stop(rgba(0,0,0,.8)),color-stop(rgba(0,0,0,.8)), to(rgba(0,0,0,0)));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
 }
 
@@ -245,6 +273,8 @@ hr{
 #bottom-call-to-action hr{
     border: none;
     height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0)), color-stop(rgba(0,0,0,.8)),color-stop(rgba(0,0,0,.8)), to(rgba(0,0,0,0)));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.8),rgba(0,0,0,.8), rgba(0,0,0,0));
 }
 
@@ -271,8 +301,12 @@ hr{
 }
 
 #main-footer .vertical-align-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #main-footer .social-links i {
@@ -280,8 +314,12 @@ hr{
 }
 
 .copyright-fine-print {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #main-footer .copyright-fine-print i {
@@ -293,7 +331,9 @@ hr{
     #main-footer #email-phone {
         min-width: 100%;
         /* important required to override bootstrap class */
-        align-items: center!important;
+        -webkit-box-align: center!important;
+            -ms-flex-align: center!important;
+                align-items: center!important;
     }
 }
 
@@ -308,9 +348,16 @@ hr{
 /* POSITION FOOTER AT BOTTOM OF PAGE */
 #main-wrapper {
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 /* ----------------LESSONS PAGE---------------- */
@@ -355,7 +402,8 @@ hr{
 
 #gallery img {
     max-height: 200px;
-    box-shadow: 0px 0px 7px 1px #111;
+    -webkit-box-shadow: 0px 0px 7px 1px #111;
+            box-shadow: 0px 0px 7px 1px #111;
 }
 
 /* ----------------CONTACT PAGE---------------- */
@@ -381,6 +429,8 @@ hr{
 #main-wrapper .contact-page-form-section hr, #main-wrapper .contact-page-contacts-section hr {
     border: none;
     height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(250,250,250,0)), color-stop(rgba(250,250,250,.4)),color-stop(rgba(250,250,250,.4)), to(rgba(250,250,250,0)));
+    background-image: -o-linear-gradient(left, rgba(250,250,250,0), rgba(250,250,250,.4),rgba(250,250,250,.4), rgba(250,250,250,0));
     background-image: linear-gradient(to right, rgba(250,250,250,0), rgba(250,250,250,.4),rgba(250,250,250,.4), rgba(250,250,250,0));
 }
 
@@ -392,7 +442,8 @@ hr{
 
 .contact-form .form-control:focus {
     border-color: var(--main-orange-btn-bg);
-    box-shadow: 0 0 0 0.2rem rgba(239,108,0,.25);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(239,108,0,.25);
+            box-shadow: 0 0 0 0.2rem rgba(239,108,0,.25);
 }
 
 .contact-form .book-now-btn {
@@ -423,8 +474,12 @@ hr{
 }
 
 .contact-page-contacts-section .vertical-align-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /* responsive map iframe code taken from https://blog.duda.co/responsive-google-maps-for-your-website */
