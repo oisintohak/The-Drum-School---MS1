@@ -283,10 +283,9 @@ hr{
     padding: 0 2px;
 }
 
-#main-footer .vertical-align-links {
+#main-footer .vertical-align-icon {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 #main-footer .social-links i {

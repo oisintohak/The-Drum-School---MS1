@@ -44,9 +44,9 @@
             <div class="row">
               <!-- CONTACT FORM -->
               <div class="col-11 col-lg-5 mx-auto mb-5 contact-page-form-section">
-                <h2 class="contact-form-heading">Please leave your details:</h2>
+                <h2 class="contact-form-heading">Leave your details to register for a lesson:</h2>
                 <hr>
-                <form method="POST" class="text-left contact-form">
+                <form class="text-left contact-form">
                   <div class="form-group">
                     <label for="name">Name:</label>
                     <input class="form-control form-text-input" type="text" name="name" id="name" required>
@@ -139,13 +139,45 @@
       <!-- FOOTER -->
       <footer id="main-footer">
         <div class="container-fluid">
-          <div class="row pt-3">
+          <div class="row justify-content-center pt-3">
+            <!-- CONTACT DETAILS -->
+            <!-- using flex classes to change alignment at different breakpoints -->
+            <div class="col-auto col-sm-5 col-md-4 mb-2 d-flex flex-column justify-content-center align-items-center align-items-sm-start">
+              <!-- ADDRESS -->
+              <div class="vertical-align-icon">
+                <i class="fas fa-map-marker"></i>
+                <address class="text-nowrap mb-0">
+                  No. 123,Road St.,<br>
+                  Dublin,Ireland.
+                </address>
+              </div>
+              <!-- EMAIL/TEL -->
+              <a class="vertical-align-icon text-nowrap" href="tel:+353-555-555-1212">
+                <i class="fas fa-phone-square-alt"></i>
+                <span>+353-555-555-1212</span>
+              </a>
+              <a class="vertical-align-icon text-nowrap" href="mailto:info@thedrumschool.com">
+                <i class="fas fa-envelope-square"></i>
+                <span>info@thedrumschool.com</span>
+              </a>
+            </div>
             <!-- LOGO -->
-            <div class="col-12 col-sm-6 col-lg-4 mb-3">
-              <a class="logo-link text-uppercase text-nowrap alt-font" href="index.html"> <img src="assets/images/drummer1.png" alt="drummer-logo" width="40" height="40"> The Drum School</a>
+            <div class="col-12 col-sm-auto col-md-4 mb-2 ml-auto">
+              <a class="logo-link text-uppercase text-nowrap alt-font" href="index.html"> 
+                <img src="assets/images/drummer1.png" alt="drummer-logo" width="40" height="40"> 
+                The Drum School
+              </a>
+              <!-- COPYRIGHT -->
+                <a class="vertical-align-icon justify-content-center" href="https://github.com/oisintohak" target="_blank">
+                  <i class="fab fa-github-square"></i>
+                  <span>
+                    © Oisin Tohak 2020.
+                  </span>
+                </a>          
             </div>
             <!-- SOCIAL LINKS -->
-            <div class="col-12 col-sm-6 col-lg-4 mb-3 social-links">
+            <!-- using flex classes to change alignment at different breakpoints -->
+            <div class="col-12 col-md-4 mb-2 social-links d-flex justify-content-center justify-content-md-end">
                 <a href="https://www.facebook.com/" target="_blank">
                   <i class="fab fa-facebook-square"></i>
                 </a>
@@ -159,37 +191,8 @@
                   <i class="fab fa-youtube-square"></i>
                 </a>
             </div>
-            <!-- CONTACT DETAILS -->
-            <div class="col-12 col-lg-4">
-              <div class="container-fluid">
-                <div class="row justify-content-center">
-                  <div class="col-5 p-0 text-right">
-                    <address class="text-nowrap">
-                      No. 123,Road St.,<br>
-                      Dublin,Ireland.
-                    </address>
-                  </div>
-                  <div class="col-auto px-0 pt-1 text-right">
-                    <i class="fas fa-map-marker"></i>
-                  </div>
-                  <div id="email-phone" class="col-6 p-0 d-flex flex-column align-items-start">
-                    <a class="vertical-align-links text-nowrap" href="tel:+353-555-555-1212"><i class="fas fa-phone-square-alt"></i><span class="responsive-text-size">+353-555-555-1212</span></a>
-                    <a class="vertical-align-links text-nowrap" href="mailto:info@thedrumschool.com"><i class="fas fa-envelope-square"></i><span class="responsive-text-size">info@thedrumschool.com</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-        <!-- COPYRIGHT -->
-        <div class="copyright-fine-print text-muted">
-          <small class="text-muted text-nowrap">
-            <a href="https://github.com/oisintohak" target="_blank">
-              <i class="fab fa-github-square"></i>
-              © Oisin Tohak 2020.
-            </a>          
-          </small>
-        </div>    
       </footer>
 
     </div>    

@@ -36,14 +36,14 @@ Below it will be some further introductory information about the drum school, le
 
 #### - Skeleton (How will our information be represented, and how will the user navigate to the information and the features?)
 ###### Wireframes:
-- [Desktop_Home_page](assets/docs/wireframes/HOME_DESKTOP.PNG)
-- [Mobile_Home_Page](assets/docs/wireframes/HOME_MOBILE.PNG)
-- [Desktop_Lessons_Page](assets/docs/wireframes/LESSONS_DESKTOP.PNG)
-- [Mobile_Lessons_Page](assets/docs/wireframes/LESSONS_MOBILE.PNG)
-- [Desktop_Gallery_Page](assets/docs/wireframes/GALLERY_DESKTOP.PNG)
-- [Mobile_Gallery_Page](assets/docs/wireframes/GALLERY_MOBILE.PNG)
-- [Desktop_Contact_Page](assets/docs/wireframes/CONTACT_BOOK_DESKTOP.PNG)
-- [Mobile_Contact_Page](assets/docs/wireframes/CONTACT_BOOK_MOBILE.PNG)
+- [Desktop_Home_page](wireframes/HOME_DESKTOP.PNG)
+- [Mobile_Home_Page](wireframes/HOME_MOBILE.PNG)
+- [Desktop_Lessons_Page](wireframes/LESSONS_DESKTOP.PNG)
+- [Mobile_Lessons_Page](wireframes/LESSONS_MOBILE.PNG)
+- [Desktop_Gallery_Page](wireframes/GALLERY_DESKTOP.PNG)
+- [Mobile_Gallery_Page](wireframes/GALLERY_MOBILE.PNG)
+- [Desktop_Contact_Page](wireframes/CONTACT_BOOK_DESKTOP.PNG)
+- [Mobile_Contact_Page](wireframes/CONTACT_BOOK_MOBILE.PNG)
 
 #### - Surface (What will the finished product look like? - What colors, typography, and design elements will we use?)
 I have chosen to use a full-screen background image of a drumkit with sticks for the home page. I have taken the color profile of this image as inspiration for the color scheme for the rest of the website to give some consitency to the colors.
@@ -89,6 +89,12 @@ After my mid-project session with my mentor I had the following changes left to 
 - Only use the background image for the first view of the home page
 - On lessons page, use large horizontal cards with image on left
 - On book now page make address text responsive and move map down in card
+
+After my end-of-project mentor session I had the following changes to implement:
+- The order in the footer from left to right should be contacts(address, email, tel), logo, social links.
+- The copyright info should be a normal size and placed under the logo in the footer
+- Change form heading to let users know why they are leaving their details
+- On mobile, move social icons down on the contacts page and make the map larger
 
 ---
 ## Testing:
