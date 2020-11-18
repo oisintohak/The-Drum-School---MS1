@@ -4,6 +4,8 @@ Live Page: [The Drum School](https://oisintohak.github.io/Milestone-Project-1/)
 
 This website was built to allow potential students to find information about The Drum School and to book lessons.
 
+![Multi Device Website Mockup](wireframes/responsive_mockup.jpg)
+
 ---
 ## User Stories:
 - I need to view the page on a mobile device.
@@ -21,7 +23,7 @@ The website aims to present essential information that the user stories request 
 
 
 #### - Scope (Which features, based on information from the strategy plane, do you want to include in your design?)
-The website should be clearly laid out with user friendly navigation to make the site easy to use and accesible. The colors, typography and styling should give the user an impression of professionalism. The user should be able to easily access links to social media, a phone number and a user-friendly contact form. There should be a page or section with pictures of the teaching environment and possibly video content of a performance or demo lesson.
+The website should be clearly laid out with user friendly navigation to make the site easy to use and accessible. The colors, typography and styling should give the user an impression of professionalism. The user should be able to easily access links to social media, a phone number and a user-friendly contact form. There should be a page or section with pictures of the teaching environment and possibly video content of a performance or demo lesson.
 
 
 
@@ -46,7 +48,7 @@ Below it will be some further introductory information about the drum school, le
 - [Mobile_Contact_Page](wireframes/CONTACT_BOOK_MOBILE.PNG)
 
 #### - Surface (What will the finished product look like? - What colors, typography, and design elements will we use?)
-I have chosen to use a full-screen background image of a drumkit with sticks for the home page. I have taken the color profile of this image as inspiration for the color scheme for the rest of the website to give some consitency to the colors.
+I have chosen to use a full-screen background image of a drumkit with sticks for the home page. I have taken the color profile of this image as inspiration for the color scheme for the rest of the website to give some consistency to the colors.
 
 ---
 ## Technologies used:
@@ -58,12 +60,16 @@ I have chosen to use a full-screen background image of a drumkit with sticks for
 - [Fancybox](https://fancyapps.com/fancybox/3/) : this is a JavaScript lightbox library for presenting various types of media. I used it for the gallery page.
 - [Autoprefixer](https://autoprefixer.github.io/) : this was used to automatically add CSS prefixes to support multiple browsers.
 - [GitHub Pages](https://pages.github.com/) was used for deployment.
+- [Tiny PNG](https://tinypng.com/) was used for image compression to reduce page load time.
+- [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php) was used to generate a mockup for this readme.
 
 ---
 ## Features:
 
  - The first view of the home page is always be the same height as the viewport, to give a landing page effect and to focus attention on the call to action button.
+ - There is a responsive navbar with a call to action button for the booking page
  - There is a more info button on the first view of the home page to indicate the presence of additional content.
+ -
 
 
 ---
@@ -82,7 +88,7 @@ I began with some initial UX planning and basic wireframes. I then started codin
 
 After my mid-project session with my mentor I had the following changes left to implement:
 - Space the address over 2 lines in footer
-- Add vertical space around the intro text above the lesson cards on the home page, with a headng above the cards and push the 'find out more' buttons to the bottom of the lesson cards
+- Add vertical space around the intro text above the lesson cards on the home page, with a heading above the cards and push the 'find out more' buttons to the bottom of the lesson cards
 - Add a testimonial slider with a header below the lesson cards on the home page
 - Add call to action text to book now button above footer
 - Move the email and phone beside the home address in the footer and increase the size of the social links
@@ -100,6 +106,24 @@ After my end-of-project mentor session I had the following changes to implement:
 ## Testing:
 - [W3C HTML Validation Service](https://validator.w3.org/) was used to validate the HTML
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS
+- I ensured that all links directed to the correct pages and that certain links directed to specific sections of other pages
+- I ensured that all links to external websites opened in a new tab
+- I tested the form validation and the submit button
+- I used the following desktop browsers for testing:
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
+  - Opera
+- I tested the site on a Xiaomi Redmi Note 7 & a Redmi Note 4 with the following mobile browsers
+  - Google Chrome
+  - Mozilla Firefox
+  - Mi Browser
+- I tested the site on a Lenovo Tab 4 10.1" with the following browsers:
+  - Google Chrome
+  - Mozilla Firefox
+- I tested responsiveness with Google Chrome Developer Tools and Mozilla Firefox Responsive Design Mode
+- All browsers mentioned were updated to the latest version as of 18/11/2020
+
 
 ---
 ## Deployment
@@ -122,3 +146,7 @@ To clone this repository run `git clone https://github.com/oisintohak/Milestone-
   - Styling for faded horizontal rule elements taken from [CSS Tricks](https://css-tricks.com/examples/hrs/)
   - Responsive map iframe code taken from [This blog](https://blog.duda.co/responsive-google-maps-for-your-website)
  
+---
+## Acknowledgments
+
+- Ignatius Ukwuoma: my Code Institute mentor who guided me through this process and shared a lot of really valuable knowledge.
