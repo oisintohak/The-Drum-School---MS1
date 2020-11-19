@@ -69,8 +69,11 @@ I have chosen to use a full-screen background image of a drumkit with sticks for
  - The first view of the home page is always be the same height as the viewport, to give a landing page effect and to focus attention on the call to action button.
  - There is a responsive navbar with a call to action button for the booking page
  - There is a more info button on the first view of the home page to indicate the presence of additional content.
- -
-
+ - The footer layout is responsive, spreading horizontally on larger screens
+ - The links to different lesson types on the home page will link and scroll to the relevant sections on the lessons page
+ - The cards on the home and lessons pages will resize and stack differently on different screen sizes.
+ - The gallery image grid is responsive.
+ - The main cards for the contact page are responsive and will stack vertically on smaller screens
 
 ---
 ## Implementation and Process:
@@ -134,6 +137,9 @@ The site was deployed to [GitHub Pages](https://pages.github.com/) using the fol
 - Save the selection and when the page reloads the link to your live site will be in the GitHub Pages section. The link can take up to 1 hour to go live.
 
 To clone this repository run `git clone https://github.com/oisintohak/Milestone-Project-1.git` into a terminal with git installed.
+
+## Version Control
+Git and GitHub were used as version control throughout this project.
 
 ---
 ## Credits

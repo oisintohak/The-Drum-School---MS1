@@ -194,6 +194,7 @@ border-width: 1px;
 
 #more-info-button a:hover {
     text-decoration: none;
+    color: var(--white-text-hover);
 }
 
 #more-info-button i {
@@ -435,7 +436,7 @@ hr{
 }
 
 .contact-form .form-control {
-    color: --black-text-color;
+    color: var(--black-text-color);
     border-radius: 6px;
     background-color: rgba(255, 255, 255, .6);
 }
@@ -496,4 +497,5 @@ hr{
     height:100%;
     width:100%;
     position:absolute;
+    border-width: 0;
 }
