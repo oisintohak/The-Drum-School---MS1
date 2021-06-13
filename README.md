@@ -1,6 +1,6 @@
 # The Drum School
 
-Live Page: [The Drum School](https://oisintohak.github.io/Milestone-Project-1/)
+Live Page: [The Drum School](https://oisintohak.com/The-Drum-School---MS1/)
 
 This website was built to allow potential students to find information about The Drum School and to book lessons.
 
